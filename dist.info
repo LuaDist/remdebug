@@ -1,0 +1,16 @@
+--- This file is part of LuaDist project
+
+name = "remdebug"
+version = "1.0"
+
+desc = "Remote Debugger for the Lua programming language"
+author = "Fabio Mascarenhas, André Carregal, Fabio Mascarenhas"
+license = "MIT/X11"
+url = "http://www.keplerproject.org/remdebug/"
+maintainer = "Peter Drahoš"
+
+depends = {
+	"lua >= 5.0",
+	"luafilesystem >= 1.2",
+	"luasocket >= 2.0"
+}
