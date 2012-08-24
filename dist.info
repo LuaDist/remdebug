@@ -10,7 +10,7 @@ url = "http://www.keplerproject.org/remdebug/"
 maintainer = "Peter Drahoš"
 
 depends = {
-	"lua >= 5.0",
+	"lua ~> 5.1",
 	"luafilesystem >= 1.2",
 	"luasocket >= 2.0"
 }
