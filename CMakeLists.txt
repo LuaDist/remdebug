@@ -4,14 +4,15 @@
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-PROJECT(remdebug NONE)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-INCLUDE(dist.cmake)
+project ( remdebug NONE )
+cmake_minimum_required ( VERSION 2.8 )
+include ( cmake/dist.cmake )
+include ( lua )
 
 # RemDebug modules
-INSTALL (FILES src/remdebug/engine.lua DESTINATION ${INSTALL_LMOD}/remdebug)
-INSTALL (FILES src/controller.lua DESTINATION ${INSTALL_LMOD})
+install_lua_module ( remdebug.engine src/remdebug/engine.lua )
+install_lua_module ( controller controller.lua )
 
 # Install RemDebug documentation
-INSTALL(DIRECTORY doc/ DESTINATION ${INSTALL_DOC})
-INSTALL(DIRECTORY tests/ DESTINATION ${INSTALL_TEST})
+install_doc ( doc/ )
+install_test ( tests/ )
