@@ -11,7 +11,7 @@ include ( lua )
 
 # RemDebug modules
 install_lua_module ( remdebug.engine src/remdebug/engine.lua )
-install_lua_module ( controller controller.lua )
+install_lua_module ( controller src/controller.lua )
 
 # Install RemDebug documentation
 install_doc ( doc/ )
